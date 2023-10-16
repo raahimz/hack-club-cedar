@@ -8,7 +8,9 @@
 	<Background />
 </div>
 
-<Navbar />
+<div class="top-2 sticky">
+	<Navbar />
+</div>
 <div class="py-2">
 	<slot />
 </div>

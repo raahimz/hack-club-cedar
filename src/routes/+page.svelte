@@ -5,11 +5,9 @@
 </script>
 
 <main>
-	<div class="mt-[25vh]">
+	<div class="h-[83vh] flex justify-center pt-[30vh]">
 		<Header />
 	</div>
-	<div class=" mt-[40vh] flex flex-col w-full gap-2">
-		<Socials />
-		<Introduction />
-	</div>
+	<Socials />
+	<Introduction />
 </main>
