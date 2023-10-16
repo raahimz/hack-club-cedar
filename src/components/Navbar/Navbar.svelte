@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="flex flex-row gap-2 bg-black items-center justify-between blur-filter p-4 border-[1px] border-gray-800 bg-opacity-20 mx-4 sticky top-2 rounded-lg shadow-sm"
+	class="flex flex-row gap-2 bg-black items-center justify-between blur-filter p-4 border-[1px] border-gray-800 bg-opacity-20 mx-4 sticky top-2 rounded-lg shadow-sm z-10"
 >
 	<div>
 		<Button url={'/'}><span class="font-extrabold">HACK CLUB</span></Button>
