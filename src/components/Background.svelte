@@ -7,7 +7,7 @@
 			el: node,
 			THREE: THREE,
 			mouseControls: true,
-			touchControls: true,
+			touchControls: false,
 			gyroControls: false,
 			minHeight: 10.0,
 			minWidth: 10.0,
