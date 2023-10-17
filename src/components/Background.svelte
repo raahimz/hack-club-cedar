@@ -6,13 +6,13 @@
 		GLOBE({
 			el: node,
 			THREE: THREE,
-			mouseControls: false,
+			mouseControls: true,
 			touchControls: false,
 			gyroControls: false,
 			minHeight: 10.0,
 			minWidth: 10.0,
-			scale: 1.0,
-			scaleMobile: 0.5,
+			scale: 1,
+			scaleMobile: 2,
 			color: 0xffc3,
 			backgroundColor: 0x121212
 		});
