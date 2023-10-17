@@ -6,7 +6,7 @@
 		GLOBE({
 			el: node,
 			THREE: THREE,
-			mouseControls: true,
+			mouseControls: false,
 			touchControls: false,
 			gyroControls: false,
 			minHeight: 10.0,
