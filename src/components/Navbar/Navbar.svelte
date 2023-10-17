@@ -6,7 +6,7 @@
 </script>
 
 <div
-	class=" bg-black blur-filter p-4 border-[1px] border-gray-800 bg-opacity-20 mx-4 rounded-lg shadow-sm z-10"
+	class=" bg-black p-4 border-[1px] border-gray-800 bg-opacity-20 mx-4 rounded-lg shadow-sm z-10"
 >
 	<div class="hidden sm:flex flex-row gap-2 justify-between items-center">
 		<div>
