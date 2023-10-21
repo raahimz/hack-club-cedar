@@ -5,7 +5,7 @@
 </script>
 
 <main>
-	<div class="h-[75vh] flex justify-center pt-[30vh]">
+	<div class="h-[80vh] flex justify-center pt-[27vh]">
 		<Header />
 	</div>
 	<Socials />

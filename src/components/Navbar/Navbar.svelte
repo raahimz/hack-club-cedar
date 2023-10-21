@@ -17,6 +17,8 @@
 			<Button url={'/web-dev'}>WEB DEV</Button>
 			<p>•</p>
 			<Button url={'/esports'}>E SPORTS</Button>
+			<p>•</p>
+			<Button url={'/credits'}>CREDITS</Button>
 		</div>
 	</div>
 
@@ -35,6 +37,7 @@
 		<div class="flex flex-col gap-2 pt-5">
 			<Button url={'/web-dev'}>WEB DEV</Button>
 			<Button url={'/esports'}>E SPORTS</Button>
+			<Button url={'/credits'}>CREDITS</Button>
 		</div>
 	{/if}
 </div>

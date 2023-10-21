@@ -11,6 +11,6 @@
 <div class="top-2 sticky">
 	<Navbar />
 </div>
-<div class="py-2">
+<div class="py-2 px-4">
 	<slot />
 </div>
