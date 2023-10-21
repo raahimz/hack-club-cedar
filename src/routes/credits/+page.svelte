@@ -10,15 +10,15 @@
 			imageURL: 'https://avatars.githubusercontent.com/u/81946686?v=4',
 			socials: [
 				{
-					url: 'https://google.com',
+					url: 'https://github.com/raahimz',
 					network: 'github'
 				},
 				{
-					url: 'https://google.com',
+					url: 'https://www.instagram.com/raahimzee',
 					network: 'instagram'
 				},
 				{
-					url: 'https://google.com',
+					url: 'https://www.linkedin.com/in/raahim-zeeshan-276827162/',
 					network: 'linkedin'
 				}
 			]
@@ -37,7 +37,26 @@
 					network: 'instagram'
 				},
 				{
-					url: 'https://google.com',
+					url: 'https://x.com820shivamkumart=V-exXFgOFtzV2uvER0ModA&s=09',
+					network: 'twitter'
+				}
+			]
+		},
+		{
+			name: 'Awab Saghir',
+			work: 'QA Tester',
+			imageURL: 'https://avatars.githubusercontent.com/u/125585883?v=4',
+			socials: [
+				{
+					url: 'https://github.com/xAwabx',
+					network: 'github'
+				},
+				{
+					url: 'https://www.instagram.com/awab_ghouri/',
+					network: 'instagram'
+				},
+				{
+					url: 'https://www.linkedin.com/in/awab-saghir-a8a1a7245/',
 					network: 'linkedin'
 				}
 			]
@@ -50,8 +69,10 @@
 		<Title>Credits</Title>
 	</div>
 	<div class="flex-col flex items-center justify-center gap-2">
-		<Container>This website was made with ❤️ by</Container>
-		<div class="flex flex-row gap-2 items-center justify-center">
+		<div class="max-w-[250px] md:max-w-none w-fit md:w-full">
+			<Container>This website was made with ❤️ by</Container>
+		</div>
+		<div class="flex flex-col md:flex-row gap-2 items-center justify-center">
 			{#each people as person}
 				<Person
 					name={person.name}
