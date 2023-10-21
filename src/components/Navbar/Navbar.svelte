@@ -14,9 +14,9 @@
 		</div>
 
 		<div class="flex flex-row gap-6">
-			<Button url={'/web-dev'}>WEB DEV</Button>
+			<Button url={'/departments/placeholder'}>WEB DEV</Button>
 			<p>•</p>
-			<Button url={'/esports'}>E SPORTS</Button>
+			<Button url={'/departments/placeholder'}>E SPORTS</Button>
 			<p>•</p>
 			<Button url={'/credits'}>CREDITS</Button>
 		</div>
