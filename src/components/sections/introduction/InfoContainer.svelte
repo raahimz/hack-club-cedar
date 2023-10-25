@@ -8,7 +8,7 @@
 >
 	<h1 class="text-3xl font-mono text-teal-500">{title}</h1>
 	<p class="max-w-2xl text-center font-sans">
-		{description}
+		{@html description}
 	</p>
 </div>
 

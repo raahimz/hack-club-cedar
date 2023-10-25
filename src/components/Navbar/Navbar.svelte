@@ -1,8 +1,10 @@
 <script>
 	import Button from './Button.svelte';
+	import Dropdown from './Dropdown.svelte';
 	import HamburgerIcon from './HamburgerIcon.svelte';
 
 	let showHamburgerMenu = false;
+	let showDropdown = false;
 </script>
 
 <div
@@ -12,13 +14,21 @@
 		<div>
 			<Button url={'/'}><span class="font-extrabold">HACK CLUB</span></Button>
 		</div>
-
 		<div class="flex flex-row gap-6">
-			<Button url={'/departments/placeholder'}>WEB DEV</Button>
-			<p>•</p>
-			<Button url={'/departments/placeholder'}>E SPORTS</Button>
+			<!-- svelte-ignore a11y-no-static-element-interactions -->
+			<!-- svelte-ignore a11y-mouse-events-have-key-events -->
+			<div on:mouseover={() => (showDropdown = true)} on:mouseleave={() => (showDropdown = false)}>
+				<p class="font-mono hover:cursor-pointer">DEPARTMENTS</p>
+				<div class="absolute">
+					{#if showDropdown}
+						<Dropdown />
+					{/if}
+				</div>
+			</div>
 			<p>•</p>
 			<Button url={'/credits'}>CREDITS</Button>
+			<p>•</p>
+			<Button url={'/events'}>EVENTS</Button>
 		</div>
 	</div>
 
@@ -35,9 +45,16 @@
 
 	{#if showHamburgerMenu}
 		<div class="flex flex-col gap-2 pt-5">
-			<Button url={'/web-dev'}>WEB DEV</Button>
-			<Button url={'/esports'}>E SPORTS</Button>
 			<Button url={'/credits'}>CREDITS</Button>
+			<Button url={'/events'}>EVENTS</Button>
+			<div class="text-center py-2 flex flex-row items-center justify-center gap-4">
+				<div class="h-[1px] w-full bg-teal-400 rounded-full" />
+				<p class="font-mono text-teal-400">DEPARTMENTS</p>
+				<div class="h-[1px] w-full bg-teal-400 rounded-full" />
+			</div>
+			<Button url={'/departments/webdev'}>WEB DEV</Button>
+			<Button url={'/departments/graphic'}>GRAPHIC</Button>
+			<Button url={'/departments/ai'}>AI</Button>
 		</div>
 	{/if}
 </div>
