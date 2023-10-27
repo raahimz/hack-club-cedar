@@ -69,151 +69,19 @@
 			]
 		}
 	];
-
-	const executives = [
-		{
-			id: 1,
-			name: 'Ali Hussain',
-			work: 'President',
-			imageURL: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png',
-			socials: [
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' }
-			]
-		},
-		{
-			id: 2,
-			name: 'Ameen Abbasi',
-			work: 'Vice President',
-			imageURL: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png',
-			socials: [
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' }
-			]
-		},
-		{
-			id: 3,
-			name: 'Minhaal Jamil',
-			work: 'Vice President',
-			imageURL: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png',
-			socials: [
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' }
-			]
-		},
-
-		{
-			id: 4,
-			name: 'Shaheer',
-			work: 'Project Manager',
-			imageURL: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png',
-			socials: [
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' }
-			]
-		},
-		{
-			id: 5,
-			name: 'Hatim Mustufa',
-			work: 'Project Manager',
-			imageURL: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png',
-			socials: [
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' }
-			]
-		},
-		{
-			id: 6,
-			name: 'Murtuza',
-			work: 'Project Manager',
-			imageURL: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png',
-			socials: [
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' }
-			]
-		},
-
-		{
-			id: 7,
-			name: 'Raahim Zeeshan',
-			work: 'Web Dev Head',
-			imageURL: 'https://avatars.githubusercontent.com/u/81946686?v=4',
-			socials: [
-				{
-					url: 'https://github.com/raahimz',
-					network: 'github'
-				},
-				{
-					url: 'https://www.instagram.com/raahimzee',
-					network: 'instagram'
-				},
-				{
-					url: 'https://www.linkedin.com/in/raahim-zeeshan-276827162/',
-					network: 'linkedin'
-				}
-			]
-		},
-		{
-			id: 8,
-			name: 'Abbad',
-			work: 'Graphic Design Head',
-			imageURL: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png',
-			socials: [
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' }
-			]
-		},
-		{
-			id: 9,
-			name: 'Saif Ahmed',
-			work: 'Promotion Head',
-			imageURL: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png',
-			socials: [
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' }
-			]
-		},
-		{
-			id: 10,
-			name: 'Abbas',
-			work: 'AI Head',
-			imageURL: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png',
-			socials: [
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' },
-				{ network: 'email', url: 'https://www.google.com' }
-			]
-		}
-	];
 </script>
 
 <main class="mt-8 flex flex-col gap-6 pt-8">
 	<div class="w-fit self-center">
 		<Title>Credits</Title>
 	</div>
-
 	<div class="flex flex-col gap-2">
 		<div class="w-fit self-center">
-			<Container>This website was made with ❤️ by</Container>
+			<Container
+				><p class="text-teal-500 font-bold text-xl">This website was made with ❤️ by</p></Container
+			>
 		</div>
 		<Masonry items={creators} {minColWidth} {maxColWidth} {gap} let:item>
-			<Person name={item.name} work={item.work} socials={item.socials} imageURL={item.imageURL} />
-		</Masonry>
-	</div>
-
-	<div class="flex flex-col gap-2">
-		<div class="w-fit self-center">
-			<Container>Hack Club Executives</Container>
-		</div>
-		<Masonry items={executives} {minColWidth} {maxColWidth} {gap} let:item>
 			<Person name={item.name} work={item.work} socials={item.socials} imageURL={item.imageURL} />
 		</Masonry>
 	</div>

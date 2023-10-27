@@ -3,8 +3,6 @@
 	import Person from '../credits/Person.svelte';
 	import Carousel from 'svelte-carousel';
 	import { browser } from '$app/environment';
-	import Container from '../credits/Container.svelte';
-	import Title from '../credits/Title.svelte';
 
 	let carousel; // for calling methods of the carousel instance
 
