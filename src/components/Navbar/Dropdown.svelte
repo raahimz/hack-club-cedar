@@ -4,7 +4,7 @@
 </script>
 
 <Container>
-	<div class="flex flex-col gap-2">
+	<div class="flex flex-col gap-2 px-6">
 		<Button url={'/departments/webdev'}>WEB DEV</Button>
 		<Button url={'/departments/graphic'}>GRAPHIC</Button>
 		<Button url={'/departments/ai'}>AI</Button>
